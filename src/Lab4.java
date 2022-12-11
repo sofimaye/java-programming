@@ -1,4 +1,5 @@
 import java.util.Arrays;
+
 import static java.util.Comparator.comparing;
 import static java.util.Comparator.comparingInt;
 
@@ -8,6 +9,7 @@ import static java.util.Comparator.comparingInt;
 // а за іншим, за спаданням використавши при цьому стандартні засоби сортування.
 // Всі змінні повинні бути описані та значення їх задані у виконавчому методі.
 // Код повинен відповідати стандартам JCC та бути детально задокументований.
+
 public class Lab4 {
     public static void main(String[] args) {
         var student1 = new Student("Stella", "Jones", "New York",

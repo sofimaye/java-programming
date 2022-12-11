@@ -25,10 +25,13 @@ public class Lab3 {
     }
 
     public static HashMap findTheWordInSentence(String text, String[] words) {
-        //шукає всі переноси, пробіли (\s*) після .
+        //шукає всі переноси, пробіли (\s*) після . потім фільтрується від пустих рядків
         var arrayOfSentences = Arrays.stream(text.split("\\.\\s*")).filter(el -> el != "").collect(Collectors.toList());
         var wordInSentencesQuantity = new HashMap<>();
 
+//        для кожного слова серед слів масиву виконується loop в якому перевіряється
+//        чи є слово у кожному реченні якщо у реченні є слово, то до змінної sumOfWordMeetInEverySentence + 1
+//        таким чином для кожного слова рахується кількість речень в яких воно наявне
         for (var word : words) {
             var sumOfWordMeetInEverySentence = 0;
             for (var sentence : arrayOfSentences) {

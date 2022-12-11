@@ -1,5 +1,6 @@
 import java.util.Objects;
 
+// створений клас Student для 4 лаби з полями та гетерами та сетерами для того, щоб дістати чи змінити значення полів
 public class Student {
     private String name;
     private String surname;
@@ -78,6 +79,7 @@ public class Student {
         return Objects.hash(name, surname, cityFrom, university, course, subjectsQuantity);
     }
 
+    //    для відображення екземпляру класу в форматі string
     @Override
     public String toString() {
         return "Student{name='%s', surname='%s', cityFrom='%s', university='%s', course=%d, subjectsQuantity=%d}"
